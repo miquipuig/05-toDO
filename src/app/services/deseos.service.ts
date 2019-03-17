@@ -15,4 +15,9 @@ export class DeseosService {
        this.listas.push( lista1, lista2);
 
    }
+
+   crearLista( titulo: string) {
+      this.listas.push (new Lista(titulo));
+   }
+   
 }
