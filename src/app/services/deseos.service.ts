@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Lista } from '../models/lista.model';
+import { ListasComponent } from '../components/listas/listas.component';
 
 @Injectable({
   providedIn: 'root'
@@ -52,4 +53,11 @@ export class DeseosService {
       });
       this.guardarStorage();
    }
+
+   modificarLista(titulo: string, lista: Lista) {
+    lista.titulo = titulo;
+
+
+    this.guardarStorage();
+ }
 }
