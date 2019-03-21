@@ -24,6 +24,9 @@ listaSeleccionada( lista: Lista ) {
   }
 }
 
+borrarLista (lista: Lista) {
+  this.deseosService.borrarLista( lista );
+}
   ngOnInit() {}
 
 }
